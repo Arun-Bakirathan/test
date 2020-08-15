@@ -1,0 +1,103 @@
+body {
+  font-size: 16px;
+  color:white;
+ background-color:black;
+  font-family: 'Oxygen', sans-serif;
+}
+#header-nav {
+  background-color:black;
+  border-bottom: solid white;
+  border-right: 0;
+  border-left: 0;
+
+
+}
+
+#logo-img{
+	background:url(../logo/glogo2.png);
+	float: left;
+	height: 150px;
+	width: 150px;
+
+
+
+}
+.navbar-brand{
+	padding-top: 30px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color:white;
+  font-size: 1.5em;
+  /*text-transform: uppercase;*/
+  font-weight: bold;
+  /*text-shadow: 1px 1px 1px #222;*/
+  
+}
+
+.navbar-header a:hover{
+	text-decoration: none;
+}
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: white;
+  text-align: center;
+}
+#nav-list a:hover {
+  background:#00CCFF
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+#phone a { /* Phone number */
+  text-align:right;
+  padding-bottom: 0;
+}
+#phone div { /* We Deliver */
+  color: white;
+  text-align: right;
+  padding-right: 15px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid white;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -100px;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+	border: 1px solid #00CCFF;
+}
+
+@media (max-width:500px ){
+  #logo-img{
+    background: url(../logo/70.png) ;
+    width:70px;
+    height:70px;
+    margin:10px; 
+
+  }
+  .navbar-brand{ 
+    padding-top: 7px;
+    height:130px;
+    }
+  .navbar-brand h1{
+    padding-top: 8px;
+    font-size: 6vw;
+}
+#collapsable-nav a{
+	font-size: 1.2em;
+}
+#collapsable-nav a span{
+	font-size: 1em;
+	margin-right: 5px;
+}
+	
+  
+}
