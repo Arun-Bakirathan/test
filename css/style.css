@@ -1,16 +1,16 @@
 body {
-  font-size: 16px;
-  color:white;
- background-color:black;
-  font-family: 'Oxygen', sans-serif;
+ 	font-size: 16px;
+ 	color:white;
+ 	background-color:black;
+ 	font-family: 'Oxygen', sans-serif;
 }
+
+/**Header**/
 #header-nav {
   background-color:black;
   border-bottom: solid white;
   border-right: 0;
   border-left: 0;
-
-
 }
 
 #logo-img{
@@ -18,10 +18,8 @@ body {
 	float: left;
 	height: 150px;
 	width: 150px;
-
-
-
 }
+
 .navbar-brand{
 	padding-top: 30px;
 }
@@ -52,6 +50,7 @@ body {
 #nav-list a:hover {
   background:#00CCFF
 }
+
 #nav-list a span {
   font-size: 1.8em;
 }
@@ -114,6 +113,85 @@ body {
   color: #ffcc;
   opacity: .8;
 }
+/* MENU CATEGORIES PAGE */
+.category-tile { 
+  position: relative;
+  border: 2px;
+  border-color: red;
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 15px;
+}
+.category-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.category-tile:hover {
+  box-shadow: 0 1px 5px 1px #00CCFF;
+}
+
+#menu-categories-title ,h2 {
+  margin-bottom: 50px;
+}
+/* END MENU CATEGORIES PAGE */
+
+/* SINGLE CATEGORY PAGE */
+.menu-item-tile {
+  margin-bottom: 25px;
+}
+.menu-item-tile hr {
+  width: 80%;
+}
+.menu-item-tile .menu-item-price {
+  font-size:.6em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.menu-item-tile .menu-item-price span {
+  font-size: 1.1em;
+}
+.menu-item-photo {
+  position: relative;
+  border: 2px solid black; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+.menu-item-photo div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.menu-item-description {
+  padding-right: 30px;
+}
+h3.menu-item-title {
+  margin: 0 0 10px;
+}
+.menu-item-details {
+  font-size: .9em;
+  font-style: italic;
+}
+/* END SINGLE CATEGORY PAGE */
+
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
   .container .jumbotron {
@@ -139,22 +217,15 @@ body {
   }
 }
 /********** extra Small devices only **********/
-@media (max-width: 767px) {
+@media (min-width: 478px) and (max-width: 767px) {
   /* Home Page */
-  .container .jumbotron{
-  	margin-top: 30px;
-  	padding: 0;
-  	border:2px solid white;
-  }
-
   #logo-img{
-    background: url(../logo/70.png) ;
+    background: url(../logo/70.png) no-repeat;
     width:70px;
     height:70px;
     margin:10px; 
 
   }
-
   .navbar-brand{ 
     padding-top: 7px;
     height:130px;
@@ -162,14 +233,14 @@ body {
   .navbar-brand h1{
     padding-top: 8px;
     font-size: 6vw;
-}
+	}
 #collapsable-nav a{
 	font-size: 1.2em;
-}
+	}
 #collapsable-nav a span{
 	font-size: 1em;
 	margin-right: 5px;
-}
+	}
 
 #call-btn > a {
     font-size: 1.5em;
@@ -186,6 +257,145 @@ body {
     letter-spacing: .1em;
     text-transform: uppercase;
   }
-  
-  
+   .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+   #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+ .menu-item-photo {
+    margin-right:auto;
+  }
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+  .menu-item-description {
+    text-align: left;
+    margin-left: 150px;
+  }
 }
+
+@media (max-width: 477px){
+ /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  #logo-img{
+    background: url(../logo/70.png) no-repeat;
+    width:70px;
+    height:70px;
+    margin:10px; 
+
+  }
+   .navbar-brand{ 
+    padding-top: 7px;
+    height:130px;
+    }
+  .navbar-brand h1{
+    padding-top: 8px;
+    font-size: 6vw;
+	}
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+#call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color:#00CCFF;
+    color: white;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+	
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+ #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+ .menu-item-photo {
+    margin-right:auto;
+  }
+
+  .menu-item-tile .menu-item-price {
+    text-align: center;
+  }
+
+  .menu-item-description {
+    text-align: left;
+    margin-left: 100px;
+  }
+}
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+div.copyright{
+	padding: 10px;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+  padding: : 30px 15px 15px 0;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials > span {
+  font-style: bold;
+  font-size: 1.3em;
+
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+  background: url("../logo/glogo2.png");
+	width: 150px;
+	height: 150px;
+}
+
+#c-img{
+	background: url("../logo/glogo2.png");
+	width: 150px;
+	height: 150px;
+}
+/* END FOOTER */
